@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Defines character encoding so text displays correctly -->
+    <meta charset="UTF-8" />
+
+    <!-- Makes the layout responsive on mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Title shown in the browser tab -->
+    <title>The Wondering Photographer</title>
+
+    <!-- External stylesheet for layout, colour scheme, and accessibility styling -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <!-- 
+    Skip link improves accessibility for keyboard and screen reader users.
+    -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- 
+    Semantic header element used to contain the website title and decorative
+    branding elements.
+    -->
+    <header class="site-header">
+
+        <!-- 
+        Decorative divider image used only for visual styling.
+        -->
+        <div class="decorative-container">
+            <img src="TheDivider.png" alt="" aria-hidden="true" class="decorative-image" />
+        </div>
+
+        <!-- 
+        Top bar holds the website title and the shopping cart button.
+        Flexbox is used in CSS to position these elements side-by-side.
+        -->
+        <div class="top-bar">
+
+            <!-- 
+            Hidden heading for accessibility.
+            -->
+            <h1 class="visually-hidden">The Wondering Photographer</h1>
+
+            <!-- Visible website title -->
+            <p class="site-title">The Wondering Photographer</p>
+
+            <!-- 
+            Shopping cart link that takes the user to the checkout page.
+            -->
+            <a href="checkout.html" class="cart-link" aria-label="Go to checkout page">
+
+                <!-- 
+                SVG cart icon used as a visual indicator for checkout.
+                -->
+                <img src="shopping-cart.svg" alt="" class="cart-icon" />
+
+                <!-- 
+                Hidden text ensures screen readers still announce the function of the cart button.
+                -->
+                <span class="visually-hidden">Checkout</span>
+            </a>
+        </div>
+
+        <!-- 
+        Introductory text explaining the purpose of the page.
+        -->
+        <p class="intro-text">
+            Welcome to my travel photography blog. Browse the gallery below and add
+            your favourite photo prints to your basket.
+        </p>
+    </header>
+
+    <!-- 
+    Main element identifies the primary content of the page.
+    -->
+    <main id="main-content" class="page-content">
+
+        <!-- 
+        Gallery section containing travel photographs available for purchase.
+        -->
+        <section class="gallery" aria-label="Travel photography gallery">
+
+            <!-- Photo card 1 -->
+            <article class="photo-post">
+                <figure>
+                    <!-- 
+                    Descriptive alt text helps visually impaired users
+                    understand what the image represents.
+                    -->
+                    <img src="OceanPhoto.jpg"
+                        alt="A calm blue sea beside a pale rocky coastline at sunset in Greenland." />
+                    <figcaption>
+                        This was from a fabulous trip to the coast of Greenland with my family.
+                        The water was lovely - but very cold!
+                    </figcaption>
+                </figure>
+
+                <!-- 
+                Button allows users to add a photo to their basket.
+                -->
+                <button type="button" class="basket-button" aria-label="Add Greenland coast photo to basket">
+                    Add to basket
+                </button>
+            </article>
+
+            <!-- Photo card 2 -->
+            <article class="photo-post">
+                <figure>
+                    <img src="BridgePhoto.jpg"
+                        alt="A low-angle photograph of the Golden Gate Bridge with bright orange-red steel against a blue sky." />
+                    <figcaption>
+                        A picture of the Golden Gate Bridge. New York! New York!
+                    </figcaption>
+                </figure>
+
+                <button type="button" class="basket-button" aria-label="Add Golden Gate Bridge photo to basket">
+                    Add to basket
+                </button>
+            </article>
+
+            <!-- Photo card 3 -->
+            <article class="photo-post">
+                <figure>
+                    <img src="ValleyPhoto.jpg"
+                        alt="A wide river valley between mountains under a bright cloudy sky in Greenland." />
+                    <figcaption>
+                        Another great photo from Greenland. It’s a river valley where a glacier used to be.
+                    </figcaption>
+                </figure>
+
+                <button type="button" class="basket-button" aria-label="Add Greenland valley photo to basket">
+                    Add to basket
+                </button>
+            </article>
+
+            <!-- Photo card 4 -->
+            <article class="photo-post">
+                <figure>
+                    <img src="WaterfallPhoto.jpg"
+                        alt="A tall waterfall dropping into a pool surrounded by green mossy rocks." />
+                    <figcaption>
+                        The waterfall made such a lovely sound. I could have fallen asleep!
+                    </figcaption>
+                </figure>
+
+                <button type="button" class="basket-button" aria-label="Add waterfall photo to basket">
+                    Add to basket
+                </button>
+            </article>
+
+        </section>
+    </main>
+
+    <!-- 
+    Footer section containing copyright information and
+    additional navigation links for the site.
+    -->
+    <footer class="site-footer">
+
+        <!-- Copyright notice -->
+        <p>Copyright The Wondering Photographer 2018.</p>
+
+        <!-- 
+        Footer navigation helps users quickly move to other pages
+        such as the blog or about section.
+        -->
+        <nav aria-label="Footer navigation">
+            <ul class="footer-nav">
+                <li><a href="index.html" aria-current="page">Home</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About me</a></li>
+            </ul>
+        </nav>
+
+    </footer>
+
+</body>
+
+</html>
